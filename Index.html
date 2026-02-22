@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Catálogo VIP</title>
+</head>
+
+<body style="font-family: Arial; text-align: center;">
+
+  <h1>Catálogo VIP</h1>
+
+  <div style="border:1px solid #ccc; padding:20px; margin:20px;">
+    <h2>Adidas Gazelle</h2>
+    <p>R$ 399,90</p>
+    <button onclick="enviarWhats()">Comprar pelo WhatsApp</button>
+  </div>
+
+  <script>
+    function enviarWhats() {
+      var numero = "5547974001332"; // COLOQUE SEU NÚMERO AQUI
+      var mensagem = "Olá, quero o Adidas Gazelle por R$ 399,90";
+      var url = "https://wa.me/" + numero + "?text=" + encodeURIComponent(mensagem);
+      window.open(url, "_blank");
+    }
+  </script>
+
+</body>
+</html>
